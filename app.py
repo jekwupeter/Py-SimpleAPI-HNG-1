@@ -14,8 +14,8 @@ def get_user_data():
         "slack_name": slack_name,
         "current_day": day,
         "utc_time": now,
-        "github_repo_url": "https://github.com/jekwupeter/SimpleAPI-HNG-1",
-        "github_file_url": "",
+        "github_repo_url": "https://github.com/jekwupeter/Py-SimpleAPI-HNG-1",
+        "github_file_url": "https://github.com/jekwupeter/Py-SimpleAPI-HNG-1/app.py",
         "track": track,
         "status_code": 200
     } 
