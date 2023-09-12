@@ -1,11 +1,13 @@
 from datetime import datetime
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 # import flask
 app = Flask(__name__)
 
-@app.route("/getdata/<slack_name>/<track>")
-def get_user_data(slack_name, track):
+@app.route("/getdata", methods=["GET"])
+def get_user_data():
+    slack_name = request.args.get("slack_name")
+    track = request.args.get("track")
     now = datetime.now()
     day = datetime.now().strftime("%A")
     mock_model = {
