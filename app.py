@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_user_data():
     slack_name = request.args.get("slack_name")
     track = request.args.get("track")
-    now = datetime.now()
+    now = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
     day = datetime.now().strftime("%A")
     mock_model = {
         "slack_name": slack_name,
