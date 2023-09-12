@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request
 # import flask
 app = Flask(__name__)
 
-@app.route("/getdata", methods=["GET"])
+@app.route("/api", methods=["GET"])
 def get_user_data():
     slack_name = request.args.get("slack_name")
     track = request.args.get("track")
